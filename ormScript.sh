@@ -53,8 +53,12 @@ while [ $i -eq $true ]; do
                 clear;
                 ;;
                 4)
+        while :
+        do
                 tmux split-window -v "sh ~/scripts/worms.sh"
                 wifiWorms="${GRE}Unleash the worms${NC}"
+        sleep 10
+        done
                 clear;
                 ;;
                 5)
